@@ -1,63 +1,161 @@
-<!doctype html>
-<html lang="en-us">       
-    <head>
-        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-        <meta charset="UTF-8">
-        <title>My Portfolio</title>    
-    </head>
-    
-    <body>
-        <header>
-            <div class="header-container">
-                <div class="your-name">
-                <h1>Natalie Roberts</h1>
-                </div>
-                    <div id="nav-menu">
-                        <div class="nav-links">
-                            <a href="index.html" style="text-decoration:none">About</a> 
-                            <a href="portfolio.html" style="text-decoration:none">Portfolio</a>
-                            <a href="contact.html" style="text-decoration:none">Contact</a>
-                        </div>
-                    </div>
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sacramento" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  <title>Natalie Roberts</title>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html">Natalie Roberts</a>
+      </div>
+    </div>
+  </nav>
+  <!-- Container for content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="row panel-row">
+          
+          <div class="col-md-6">
+            <div class="page-header1" id="about-panel">
+                <h2>About:</h2>
             </div>
-        </header>
-    
-    <section class="content-container">
-        <section id="about-me">
-            <div class="h2">
-            <h2>About Me</h2>
-            </div>
-                <div id="about-me-text">
-                    <p><img id="about-me-image" src="assets/images/Natalie Pic 2.jpg" alt="Natalie Roberts"></p>
-                    <p>Welcome to my portfolio page!</p> <p> I’m Natalie Roberts, a freelance developer from Orlando, Florida. I am currently studying to be a Full Stack Web Developer at the University of Central Florida’s Coding Bootcamp. I have diverse, cross-industry experience in technology, education, and training and I am interested in working on freelance projects with companies or individuals. I am also open to full-time opportunities as a Web Developer. </p>
-                    <p>In my free time I love the outdoors, especially druing the winters in Florida. My husband and I enjoy spending vacation time traveling to the beach or exploring a new hiking trail.</p> 
-                </div>
-        </section>
-        
-        <aside class="connect-with-me">
-            <div class="h3">
-               <h3>Connect with Me</h3>
-            </div>
-                <div class="icons-container">
-                    <div class="icon">
-                    <a href="https://github.com/natroberts19" target="_blank" style="text-decoration:none">   
-                    <img src="assets/images/if_github_1220319.png" alt="GitHub" style="width:50px;height:50px;border:0">
-                    </a>
-                    <div class="icon"></div><a href="https://www.linkedin.com/in/robertsnatalie/" target="_blank" style="text-decoration:none">   
-                    <img src="assets/images/if_linkedin_1220314.png" alt="LinkedIn" style="width:50px;height:50px;border:0">
-                    </a>
-                    <div class="icon"></div><a href="https://stackoverflow.com/users/8539503/n-roberts" target="_blank" style="text-decoration:none">   
-                    <img src="assets/images/if_stackoverflow_1220302.png" alt="StackOverflow" style="width:50px;height:50px;border:0">
-                    </a>
-                </div>
-            </div>
-        </aside>
-        </section>
-    
-    <footer>
-        Copyright &#169; Natalie Roberts 2017
-    </footer>
-	
+            <p> I’m Natalie Roberts, a freelance web developer from Orlando, Florida. I am currently studying to be a Full Stack
+              Web Developer at the University of Central Florida’s Coding Bootcamp.
+              <p>I have diverse, cross-industry experience in technology, education, and training and I am interested in working
+                on freelance projects with companies or individuals. I am also open to full-time opportunities as a Web Developer.
+              </p>
+              <p>In my free time I love the outdoors, especially during the winters in Florida. My husband and I enjoy spending
+                vacation time traveling to the beach or exploring a new hiking trail.</p>
+          </div>
+          
+
+          <div class="col-md-3">
+          <div class="page-header1" id="connect-panel">
+            <h2>Connect:</h2>
+          </div>
+          <p>
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <a href="https://github.com/natroberts19" target="_blank" style="text-decoration:none"> GitHub</a>
+          </p>
+          <p>
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <a href="https://www.linkedin.com/in/robertsnatalie/" target="_blank" style="text-decoration:none"> LinkedIn</a>
+          </p>
+          <p>
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <a href="#" target="_blank" style="text-decoration:none"> EMail</a>
+          </p>
+        </div>
+
+        <div class="col-md-3">
+            <img src="assets/images/Natalie1.jpg" class="profile-image" alt="Natalie Roberts">
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Project Carousel -->
+  <div class="container">
+    <div class="row">
+          <div class="col-xs-12">   
+    <div class="page-header2">
+      <h2>Projects:</h2>
+    </div>
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval=false>
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+      </ol>
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <a href="https://natroberts19.github.io/hangman-game/" target="_blank">
+            <img src="assets/images/npbackground.jpeg" alt="Natl Park" class="thumbnail">
+          </a>
+          <div class="carousel-caption">
+            <p>National Parks hangman game is designed using HTML with Bootstrap elements, CSS, and JavaScript.</p>
+          </div>
+        </div>
+        <div class="item">
+          <a href="https://natroberts19.github.io/week-4-game/" target="_blank">
+            <img src="assets/images/kaleidoscope.jpeg" alt="Glass" class="thumbnail">
+          </a>
+          <div class="carousel-caption">
+            <p>Crystal Kaleidoscopes is a simple click counter game. Designed using HTML with Bootstrap elements, CSS, JavaScript,
+              and jQuery.</p>
+          </div>
+        </div>
+        <div class="item">
+          <a href="https://natroberts19.github.io/GifTastic/" target="_blank">
+            <img src="assets/images/prairie-dog.jpg" alt="Prairie Dog" class="thumbnail">
+          </a>
+          <div class="carousel-caption">
+            <p>Best SNL Hosts is a fun gif display designed using HTML, CSS, JavaScript, jQuery, and AJAX. Emphasizes dynamically
+              creating a list of gifs by using data from the Giphy API.</p>
+          </div>
+        </div>
+        <div class="item">
+          <a href="https://natroberts19.github.io/train-time/" target="_blank">
+            <img src="assets/images/train-railroad.jpg" alt="Train" class="thumbnail">
+          </a>
+          <div class="carousel-caption">
+            <p>Train Time is train scheduling application designed using HTML and Bootstrap form elements, along with Firebase
+              and Moment.js.</p>
+          </div>
+        </div>
+        <div class="item">
+          <a href="https://codebloodedteam.github.io/codingCollab/index.html#" target="_blank">
+            <img src="assets/images/startup-collab2.jpg" alt="Collab" class="thumbnail">
+          </a>
+          <div class="carousel-caption">
+            <p>Coding Collab is a web application built using Materialize (UI), JavaScript, Google API, and Firebase database
+              and authentication.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+    </div>
+  </div>
+  <div id="page-header-end">
+    <!-- placeholder for now. -->
+  </div>
+
+  <footer>
+    Copyright &#169; Natalie Roberts 2017
+  </footer>
 </body>
 
 </html>
