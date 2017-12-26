@@ -158,10 +158,11 @@ footer {
 .carousel-caption {
   font-family: 'Lato', sans-serif;
   font-weight: bold;
+  color: black;
   background: whitesmoke;
   border-radius: 20%;
   border: 1px solid gray;
-  opacity: .8;
+  opacity: .7;
   height: 90px;
 }
 
