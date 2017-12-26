@@ -95,17 +95,28 @@ hr {
 
 .glyphicon.glyphicon-chevron-right {
   text-align: center;
+  font-size: 18px;
   color: rgb(255, 136, 0);
 }
 
 .glyphicon.glyphicon-chevron-left {
   text-align: center;
+  font-size: 18px;
   color: rgb(255, 136, 0);
 }
 
 #page-header-end {
   border-bottom-color: none;
   margin-top: 10px;
+}
+
+.caption {
+  padding-top: none;
+}
+
+.thumbnail {
+  max-width: 250px;
+  height: auto;
 }
 
 footer {
@@ -122,13 +133,5 @@ footer {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-#text {
-  text-align: left;
-}
-.thumbnail {
-  max-width: 250px;
-  height: auto;
-  text-align: center;
-}
 
 
