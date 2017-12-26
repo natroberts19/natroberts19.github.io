@@ -77,20 +77,20 @@ hr {
   max-width: 100px;
   height: auto;
   /* text-align: left; */
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
-.page-header1 {
-  margin-top: 20px;
-}
-
-.page-header2 {
+.page-header {
   border-bottom-color: rgb(255, 136, 0);
   margin-top: 10px;
 }
 
 #connect-panel {
   text-align: center;
+}
+
+#connect-panel2 {
+  margin-top: 15px;
 }
 
 .glyphicon.glyphicon-chevron-right {
@@ -108,10 +108,6 @@ hr {
   margin-top: 10px;
 }
 
-.caption {
-  padding: 0px;
-}
-
 footer {
   width: 100%;
   height: 17px;
@@ -126,54 +122,13 @@ footer {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.close {
-  background: #3e3e3f;
-  color: rgb(255, 136, 0);
-  line-height: 25px;
-  position: absolute;
-  right: -13px;
+#text {
+  text-align: left;
+}
+.thumbnail {
+  max-width: 250px;
+  height: auto;
   text-align: center;
-  top: -10px;
-  width: 24px;
-  text-decoration: none;
-  font-weight: bold;
-  -webkit-border-radius: 12px;
-  -moz-border-radius: 12px;
-  border-radius: 12px;
-}
-
-.close:hover {
-  background: rgb(255, 136, 0);
 }
 
 
-/* Carousel */
-
-.carousel-inner>.item>img,
-.carousel-inner>.item>a>img {
-  width: 40%;
-  margin: auto;
-}
-
-.carousel-caption {
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  color: black;
-  background: whitesmoke;
-  border-radius: 20%;
-  border: 1px solid gray;
-  opacity: .7;
-  height: 90px;
-}
-
-.active {
-  background: none;
-}
-
-.left.carousel-control {
-  color: rgb(255, 136, 0);
-}
-
-.right.carousel-control {
-  color: rgb(255, 136, 0);
-}
