@@ -117,6 +117,12 @@ hr {
 .thumbnail {
   max-width: 250px;
   height: auto;
+  float: left;
+}
+
+#thumbnail-pic {
+  width: 150px;
+  height: 160px;
 }
 
 footer {
