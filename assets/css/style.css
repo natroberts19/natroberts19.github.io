@@ -114,6 +114,10 @@ hr {
   padding-top: none;
 }
 
+.size-class {
+  min-height: 450px;
+}
+
 .thumbnail {
   max-width: 250px;
   height: auto;

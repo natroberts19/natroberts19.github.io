@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Natalie Roberts</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
+
+    .jumbotron {
+      background-color: #f4511e;
+      color: #fff;
+      padding: 80px 25px;
+      font-family: Montserrat, sans-serif;
+      font-size: 28px;
+    }
+
+    .profile-image {
+      border-radius: 50%;
+      border: 1px solid gray;
+      max-width: 150px;
+      height: auto;
+      /* text-align: left; */
+      margin-top: 10px;
+    }
+
+    .resume {
+      text-align: left;
+      margin-left: 10px;
+      margin-right: 10px;
+      font-size: 18px;
+    }
+
+    .container-fluid {
+      padding: 60px 50px;
+    }
+
+    .bg-grey {
+      background-color: #f6f6f6;
+    }
+
+    .logo-small {
+      color: #f4511e;
+      font-size: 50px;
+    }
+
+    .logo {
+      color: #f4511e;
+      font-size: 200px;
+    }
+
+    .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+    }
+
+    .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+    }
+
+    .carousel-control.right,
+    .carousel-control.left {
+      background-image: none;
+      color: #f4511e;
+    }
+
+    .carousel-indicators li {
+      border-color: #f4511e;
+    }
+
+    .carousel-indicators li.active {
+      background-color: #f4511e;
+    }
+
+    .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+    }
+
+    .item span {
+      font-style: normal;
+    }
+
+    .panel {
+      border: 1px solid #f4511e;
+      border-radius: 0 !important;
+      transition: box-shadow 0.5s;
+    }
+
+    .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
+    }
+
+    .panel-footer .btn:hover {
+      border: 1px solid #f4511e;
+      background-color: #fff !important;
+      color: #f4511e;
+    }
+
+    .panel-heading {
+      color: #fff !important;
+      background-color: #f4511e !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+    }
+
+    .panel-footer {
+      background-color: white !important;
+    }
+
+    .panel-footer h3 {
+      font-size: 32px;
+    }
+
+    .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #f4511e;
+      color: #fff;
+    }
+
+    .navbar {
+      margin-bottom: 0;
+      background-color: #f4511e;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+    }
+
+    .navbar li a,
+    .navbar .navbar-brand {
+      color: #fff !important;
+    }
+
+    .navbar-nav li a:hover,
+    .navbar-nav li.active a {
+      color: #f4511e !important;
+      background-color: #fff !important;
+    }
+
+    .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+    }
+
+    footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #f4511e;
+    }
+
+    .slideanim {
+      visibility: hidden;
+    }
+
+    .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+    }
+
+    @keyframes slide {
+      0% {
+        opacity: 0;
+        transform: translateY(70%);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+    }
+
+    @-webkit-keyframes slide {
+      0% {
+        opacity: 0;
+        -webkit-transform: translateY(70%);
+      }
+      100% {
+        opacity: 1;
+        -webkit-transform: translateY(0%);
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+      }
+      .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .logo {
+        font-size: 150px;
+      }
+    }
+  </style>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#myPage">Natalie Roberts</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <a href="#about">ABOUT ME</a>
+          </li>
+          <li>
+            <a href="#resume">RESUME</a>
+          </li>
+          <li>
+            <a href="#projects">PROJECTS</a>
+          </li>
+          <li>
+            <a href="#contact">CONTACT ME</a>
+          </li>
+          <!-- <li><a href="#testimonials">TESTIMONIALS</a></li>  -->
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="jumbotron text-center">
+    <img src="assets/images/Natalie1.jpg" class="profile-image" alt="Natalie Roberts">
+    <h1>Natalie Roberts</h1>
+    <p>A technology and training professional.</p>
+  </div>
+
+  <!-- Container (About Section) -->
+  <div id="about" class="container-fluid">
+    <div class="row">
+      <div class="col-sm-8">
+        <h2>About Me</h2>
+        <p>A results-oriented professional with diverse, cross-industry experience in technology, education, and training. Currently
+          completing the Full Stack Web Developer Bootcamp at the University of Central Florida.</p>
+        <p>Interested in working on freelance projects with companies or individuals. Open to full-time technology opportunities.
+        </p>
+        <a href="#contact">
+          <p>Get in Touch</p>
+        </a>
+      </div>
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-zoom-in logo"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Container (Resume Section) -->
+  <div id="resume" class="container-fluid text-center bg-grey">
+    <h2>RESUME</h2>
+    <!-- <h4>What I offer...</h4> -->
+    <div class="row slideanim">
+      <div class="col-sm-6">
+        <span class="glyphicon glyphicon-lock logo-small"></span>
+        <h4>JOB WELL DONE</h4>
+        <h4>Signature Professional Achievements:</h4>
+        <div class="resume">
+          <strong>Individually Motivated Performance Assisted by Computer Technology (IMPACT) dropout prevention program at Celebration
+            High School.</strong>
+          <br>
+          <ul>
+            <li>Developed District-wide best practices for curriculum, mentoring guidelines, and procedures for reporting student
+              progress. These practices continue to be used and serve as the foundation for the training of new IMPACT instructors.</li>
+            <li> Graduation rate of students in the IMPACT program was 90% from 2008-2010. Successfully increased the overall
+              school graduation rate by 10% in 2009.</li>
+          </ul>
+          <p></p>
+          <strong>Lead project manager and trainer for offshore call center implementation at Tupperware Corporation.</strong>
+          <ul>
+            <li>
+              Successfully implemented all training, technical, and operational aspects of an overseas call center expansion to Cebu, Philippines.</li>
+            <li>Expanded call service agents from 13 to 110 in one year and successfully transitioned full inbound phone servicing
+              to the Philippines.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-sm-6">
+        <span class="glyphicon glyphicon-certificate logo-small"></span>
+        <h4>QUALIFIED &#38; CERTIFIED</h4>
+        <h4>Relevant Education and Certifications:</h4>
+        <div class="resume">
+          <strong>University of Central Florida (UCF) Coding Boot Camp</strong>
+          <ul>
+            <li>Six-month, full-stack developer program that includes hands-on and project-oriented instruction of front-end
+              technologies (HTML, CSS, JavaScript, jQuery, and responsive design); server side development (Node.js, MySQL,
+              and PHP); and, Git deployment, algorithms, and design patterns.</li>
+          </ul>
+          <strong>Florida Professional Teacher Certificate (DOE# 832197)</strong>
+          <br>
+          <strong>Mississippi State University, Master of Science, Systems Management</strong>
+          <br>
+          <strong>State University of New York at Geneseo, Bachelor of Arts, Political Science</strong>
+        </div>
+      </div>
+    </div>
+    <br>
+    <div class="row slideanim">
+      <div class="col-sm-6">
+        <span class="glyphicon glyphicon-heart logo-small"></span>
+        <h4>PASSION</h4>
+        <div class="resume">
+          <strong>Solving Problems</strong>
+          <ul>
+            <li>Developing and using technology to enhance processes and user experiences for students and customers. </ul>
+          </li>
+          <strong>Training &#38; Coaching</strong>
+          <ul>
+            <li>Strong track record of motivation, mentoring, and helping others achieve their professional and learning goals.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <span class="glyphicon glyphicon-wrench logo-small"></span>
+        <h4 style="color:#303030;">HARD WORK</h4>
+        <p>Lorem ipsum dolor sit amet..</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Container (Projects Section) -->
+  <div id="projects" class="container-fluid text-center">
+    <h2>Technical Projects</h2>
+    <!-- <h4>What I have created...</h4> -->
+    <div class="row text-center slideanim">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="assets/images/npbackground.jpeg" alt="Natl Park" width="400" height="300">
+          <p>
+            <strong>
+              <a href="https://natroberts19.github.io/hangman-game/" target="_blank">National Parks - Hangman Game</a>
+            </strong>
+          </p>
+          <p>National Parks Hangman puts a modern spin on the classic game. Designed using HTML with Bootstrap elements, CSS,
+            and JavaScript.</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="assets/images/kaleidoscope.jpeg" alt="Kaleidoscope" width="400" height="300">
+          <p>
+            <strong>
+              <a href="https://natroberts19.github.io/week-4-game/" target="_blank">Crystal Kaleidoscopes - Click Game</a>
+            </strong>
+          </p>
+          <p>Crystal Kaleidoscopes is a simple click counter game. Designed using HTML with Bootstrap elements, CSS, JavaScript,
+            and jQuery.</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="assets/images/giphy.jpg" alt="Giphy" width="400" height="300">
+          <br>
+          <br>
+          <p>
+            <strong>
+              <a href="https://natroberts19.github.io/GifTastic/" target="_blank">Best SNL Hosts - Giphy API</a>
+            </strong>
+          </p>
+          <p>A fun app designed using Bootstrap, JavaScript, and jQuery. Dynamically creates a list of gifs using data from
+            the Giphy API.</p>
+        </div>
+      </div>
+    </div>
+    <div class="row text-center slideanim">
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="assets/images/toy-train.png" alt="Train" width="400" height="300">
+          <br>
+          <br>
+          <p>
+            <strong>
+              <a href="https://natroberts19.github.io/train-time/" target="_blank">Train Schedule Application - Firebase</a>
+            </strong>
+          </p>
+          <p>Train Time is train scheduling application designed using HTML and Bootstrap form elements, along with Firebase
+            and Moment.js.</p>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <img src="assets/images/liri.jpg" alt="Server" width="400" height="300">
+          <p>
+            <strong>
+              <a href="#" target="_blank">Liri Application - Node.js *coming soon*</a>
+            </strong>
+          </p>
+          <p>The Liri application displays tweets or searches for songs and movies using the Twitter, Spotify, and OMdb API's
+            in the Node terminal.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <!-- Container (Contact Section) -->
+  <div id="contact" class="container-fluid bg-grey">
+    <h2 class="text-center">CONTACT ME</h2>
+    <div class="row">
+
+      <div class="col-sm-12">
+        <p class="text-center">
+          <a href="https://www.linkedin.com/in/robertsnatalie/" target="_blank" style="text-decoration:none">
+            <img src="assets/images/LinkedIn.png" alt="LinkedIn" width="50" height="50">
+            <br> www.linkedin.com/in/robertsnatalie </a>
+        </p>
+        <p class="text-center">
+          <a href="mailto:natroberts19@gmail.com" target="_blank" style="text-decoration:none">
+            <img src="assets/images/Email.png" alt="Email" width="50" height="50">
+            <br> natroberts19@gmail.com </a>
+        </p>
+        <p class="text-center">
+          <a href="https://github.com/natroberts19" target="_blank" style="text-decoration:none">
+            <img src="assets/images/Git.png" alt="Github" width="50" height="50">
+            <br> github.com/natroberts19 </a>
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+  <footer class="container-fluid text-center">
+    <a href="#myPage" title="To Top">
+      <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+    <p>Bootstrap theme by
+      <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a>.</p>
+    <p>Modified and personalized by Natalie Roberts, 2018.</p>
+  </footer>
+
+  <script>
+    $(document).ready(function () {
+      // Add smooth scrolling to all links in navbar + footer link
+      $(".navbar a, footer a[href='#myPage']").on('click', function (event) {
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+
+          // Store hash
+          var hash = this.hash;
+
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: $(hash).offset().top
+          }, 900, function () {
+
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+
+      $(window).scroll(function () {
+        $(".slideanim").each(function () {
+          var pos = $(this).offset().top;
+
+          var winTop = $(window).scrollTop();
+          if (pos < winTop + 600) {
+            $(this).addClass("slide");
+          }
+        });
+      });
+    })
+  </script>
+
+</body>
+
+</html>
