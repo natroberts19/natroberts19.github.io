@@ -192,6 +192,24 @@
       color: #fff !important;
     }
 
+    #intro {
+      background-image: url("assets/images/coffee-neutral.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      /* background-color: whitesmoke; */
+      /* opacity: .8; */
+    }
+
+    #footer {
+      background-image: url("assets/images/pexels-wood2.jpeg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      /* background-color: whitesmoke; */
+      opacity: .9;
+      color: #0a0a0a;
+      font-style: bold;
+    }
+
     footer .glyphicon {
       font-size: 20px;
       margin-bottom: 20px;
@@ -283,7 +301,7 @@
     </div>
   </nav>
 
-  <div class="jumbotron text-center">
+  <div id="intro" class="jumbotron text-center">
     <img src="assets/images/Natalie1.jpg" class="profile-image" alt="Natalie Roberts">
     <h1>Natalie Roberts</h1>
     <p>A technology and training professional.</p>
@@ -292,18 +310,19 @@
   <!-- Container (About Section) -->
   <div id="about" class="container-fluid">
     <div class="row">
+      <div class="col-sm-4">
+        <span class="glyphicon glyphicon-stats logo"></span>
+      </div>
       <div class="col-sm-8">
         <h2>About Me</h2>
-        <p>A results-oriented professional with diverse, cross-industry experience in technology, education, and training. Currently
-          completing the Full Stack Web Developer Bootcamp at the University of Central Florida.</p>
-        <p>Interested in working on freelance projects with companies or individuals. Open to full-time technology opportunities.
+        <p>Results-oriented professional with accomplishments in training, technology, leadership, and project management. Passionate
+          about developing technology to enhance processes and user experiences.</p>
+        <p>Currently completing the Full Stack Web Developer Boot Camp at the University of Central Florida. Interested in working
+          on freelance projects with companies or individuals. Open to full-time technology opportunities.
         </p>
         <a href="#contact">
           <p>Get in Touch</p>
         </a>
-      </div>
-      <div class="col-sm-4">
-        <span class="glyphicon glyphicon-zoom-in logo"></span>
       </div>
     </div>
   </div>
@@ -314,7 +333,7 @@
     <!-- <h4>What I offer...</h4> -->
     <div class="row slideanim">
       <div class="col-sm-6">
-        <span class="glyphicon glyphicon-lock logo-small"></span>
+        <span class="glyphicon glyphicon-thumbs-up logo-small"></span>
         <h4>JOB WELL DONE</h4>
         <h4>Signature Professional Achievements:</h4>
         <div class="resume">
@@ -326,6 +345,8 @@
               progress. These practices continue to be used and serve as the foundation for the training of new IMPACT instructors.</li>
             <li> Graduation rate of students in the IMPACT program was 90% from 2008-2010. Successfully increased the overall
               school graduation rate by 10% in 2009.</li>
+            <li>Selected as an Inspired Educator Finalist recognized for defining, building and successfully implementing an
+              educational program at Celebration High School using PLATO Learning’s online instructional solutions.</li>
           </ul>
           <p></p>
           <strong>Lead project manager and trainer for offshore call center implementation at Tupperware Corporation.</strong>
@@ -334,22 +355,57 @@
               Successfully implemented all training, technical, and operational aspects of an overseas call center expansion to Cebu, Philippines.</li>
             <li>Expanded call service agents from 13 to 110 in one year and successfully transitioned full inbound phone servicing
               to the Philippines.</li>
+            <li>Received the 2004 Tupperware Global Leadership Award in recognition of outstanding leadership in implementing
+              the successful launch of an expanded Call Center in Cebu, Philippines. </li>
           </ul>
         </div>
       </div>
 
       <div class="col-sm-6">
+        <span class="glyphicon glyphicon-lock logo-small"></span>
+        <h4 style="color:#303030;">HARD WORK</h4>
+        <h4>Employment History:</h4>
+        <div class="resume">
+          <strong>Osceola County School District, Industry Training Specialist and Teacher, 12 years</strong>
+          <br>
+          <ul>
+            <li>Provide transition advisement for college and career-bound adults. </li>
+            <li>Develop training programs with businesses and the community to expand learning opportunities for students.</li>
+          </ul>
+          <p></p>
+          <strong>Aon Hewitt, Implementation Project Manager, 2 years</strong>
+          <ul>
+            <li>
+              Managed activities of all customer service resources during the implementation of new accounts, including coaching employees,
+              consulting managers and training. </li>
+            <li>Successfully managed four client implementations of direct compensation servicing and one for multi-process HR
+              servicing.
+            </li>
+          </ul>
+          <strong>Tupperware Brands, Training Manager and Curriculum Developer, 5 years </strong>
+          <br>
+          <ul>
+            <li>Managed training program for over 100 employees, located in Orlando, FL and Cebu, Philippines. </li>
+            <li>Developed and facilitated new hire orientation and ongoing employee training to support changes in the call center.</li>
+            <li> Managed and directed workflow for a staff of two trainers and one communications administrator.</li>
+          </ul>
+          <p></p>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div class="row slideanim">
+      <div class="col-sm-6">
         <span class="glyphicon glyphicon-certificate logo-small"></span>
         <h4>QUALIFIED &#38; CERTIFIED</h4>
-        <h4>Relevant Education and Certifications:</h4>
         <div class="resume">
           <strong>University of Central Florida (UCF) Coding Boot Camp</strong>
           <ul>
             <li>Six-month, full-stack developer program.</li>
             <li>Includes hands-on and project-oriented instruction.</li>
             <li>Front-end development using HTML, CSS, JavaScript, jQuery, and responsive design.</li>
-            <li>Server side development using Node.js, MySQL,
-              and PHP.</li>
+            <li>Server side development using Node.js, MySQL, and PHP.</li>
             <li>Git deployment, algorithms, and design patterns.</li>
           </ul>
           <strong>Florida Professional Teacher Certificate (DOE# 832197)</strong>
@@ -359,108 +415,125 @@
           <strong>State University of New York at Geneseo, Bachelor of Arts, Political Science</strong>
         </div>
       </div>
-    </div>
-    <br>
-    <div class="row slideanim">
+
       <div class="col-sm-6">
         <span class="glyphicon glyphicon-heart logo-small"></span>
         <h4>PASSION</h4>
         <div class="resume">
           <strong>Solving Problems</strong>
           <ul>
-            <li>Developing and using technology to enhance processes and user experiences for students and customers. </ul>
-          </li>
-          <strong>Training &#38; Coaching</strong>
-          <ul>
-            <li>Strong track record of motivation, mentoring, and helping others achieve their professional and learning goals.</li>
-          </ul>
+            <li>Developing and using technology to enhance processes and user experiences for students and customers.
+            </li>
+            <strong>Training &#38; Coaching</strong>
+            <ul>
+              <li>Strong track record of motivation, mentoring, and helping others achieve their professional and learning goals.</li>
+            </ul>
         </div>
-      </div>
-      <div class="col-sm-6">
-        <span class="glyphicon glyphicon-wrench logo-small"></span>
-        <h4 style="color:#303030;">HARD WORK</h4>
-        <p>Lorem ipsum dolor sit amet..</p>
       </div>
     </div>
   </div>
 
+
   <!-- Container (Projects Section) -->
-  <div id="projects" class="container-fluid text-center">
+  <div id="projects" class="container-fluid text-center bg-grey">
     <h2>Technical Projects</h2>
-    <!-- <h4>What I have created...</h4> -->
+    <h4>What I have created...</h4>
+    <!-- Projects Row 1 -->
     <div class="row text-center slideanim">
       <div class="col-sm-4">
         <div class="thumbnail">
-          <img src="assets/images/npbackground.jpeg" alt="Natl Park" width="400" height="300">
-          <p>
-            <strong>
-              <a href="https://natroberts19.github.io/hangman-game/" target="_blank">National Parks - Hangman Game</a>
-            </strong>
-          </p>
+          <a href="https://natroberts19.github.io/hangman-game/" target="_blank">
+            <img src="assets/images/npbackground.jpeg" alt="Natl Park" width="400" height="300">
+            <p>
+              <strong> National Parks - Hangman Game</strong>
+            </p>
+          </a>
           <p>National Parks Hangman puts a modern spin on the classic game. Designed using HTML with Bootstrap elements, CSS,
             and JavaScript.</p>
         </div>
       </div>
+
       <div class="col-sm-4">
         <div class="thumbnail">
-          <img src="assets/images/kaleidoscope.jpeg" alt="Kaleidoscope" width="400" height="300">
-          <p>
-            <strong>
-              <a href="https://natroberts19.github.io/week-4-game/" target="_blank">Crystal Kaleidoscopes - Click Game</a>
-            </strong>
-          </p>
+          <a href="https://natroberts19.github.io/week-4-game/" target="_blank">
+            <img src="assets/images/kaleidoscope.jpeg" alt="Kaleidoscope" width="400" height="300">
+            <p>
+              <strong>Crystal Kaleidoscopes - Click Game</strong>
+            </p>
+          </a>
           <p>Crystal Kaleidoscopes is a simple click counter game. Designed using HTML with Bootstrap elements, CSS, JavaScript,
             and jQuery.</p>
         </div>
       </div>
+
       <div class="col-sm-4">
         <div class="thumbnail">
-          <img src="assets/images/giphy.jpg" alt="Giphy" width="400" height="300">
-          <br>
-          <br>
-          <p>
-            <strong>
-              <a href="https://natroberts19.github.io/GifTastic/" target="_blank">Best SNL Hosts - Giphy API</a>
-            </strong>
-          </p>
+          <a href="https://natroberts19.github.io/GifTastic/" target="_blank">
+            <img src="assets/images/giphy.jpg" alt="Giphy" width="400" height="300">
+            <br>
+            <br>
+            <p>
+              <strong>Best SNL Hosts - Giphy API</strong>
+            </p>
+          </a>
           <p>A fun app designed using Bootstrap, JavaScript, and jQuery. Dynamically creates a list of gifs using data from
             the Giphy API.</p>
         </div>
       </div>
+      <!-- Closes Row 1 -->
     </div>
+
+    <!-- Projects Row 2 begins -->
     <div class="row text-center slideanim">
       <div class="col-sm-4">
         <div class="thumbnail">
-          <img src="assets/images/toy-train.png" alt="Train" width="400" height="300">
-          <br>
-          <br>
-          <p>
-            <strong>
-              <a href="https://natroberts19.github.io/train-time/" target="_blank">Train Schedule Application - Firebase</a>
-            </strong>
-          </p>
+          <a href="https://natroberts19.github.io/train-time/" target="_blank">
+            <img src="assets/images/toy-train.png" alt="Train" width="400" height="300">
+            <br>
+            <br>
+            <p>
+              <strong>Train Schedule Application - Firebase </strong>
+            </p>
+          </a>
           <p>Train Time is train scheduling application designed using HTML and Bootstrap form elements, along with Firebase
             and Moment.js.</p>
         </div>
       </div>
+
       <div class="col-sm-4">
         <div class="thumbnail">
-          <img src="assets/images/liri.jpg" alt="Server" width="400" height="300">
-          <p>
-            <strong>
-              <a href="https://github.com/natroberts19/liri-node-app/" target="_blank">Liri Application - Node.js</a>
-            </strong>
-          </p>
+          <a href="https://github.com/natroberts19/liri-node-app/" target="_blank">
+            <img src="assets/images/liri.jpg" alt="Server" width="400" height="300">
+            <p>
+              <strong>Liri Application - Node.js</strong>
+            </p>
+          </a>
           <p>The Liri application displays tweets or searches for songs and movies using the Twitter, Spotify, and OMdb API's
             in the Node terminal.</p>
         </div>
       </div>
+
+      <div class="col-sm-4">
+        <div class="thumbnail">
+          <a href="https://github.com/natroberts19/Bamazon" target="_blank">
+            <img src="assets/images/ecommerce.jpeg" alt="Server" width="400" height="300">
+            <p>
+              <strong>Bamazon - Node.js and mySQL</strong>
+            </p>
+          </a>
+          <p>Bamazon is a storefront app that allows a customer to order items that are stored in an SQL database. JavaScript
+            functions and SQL queries power a Node.js CLI.</p>
+        </div>
+      </div>
+
+      <!-- closes Row 2 -->
     </div>
+    <!-- closes the Projects container -->
   </div>
   <br>
 
   <!-- Container (Contact Section) -->
-  <div id="contact" class="container-fluid bg-grey">
+  <div id="contact" class="container-fluid">
     <h2 class="text-center">CONTACT ME</h2>
     <div class="row">
 
@@ -482,11 +555,10 @@
         </p>
       </div>
     </div>
-  </div>
+    <!-- closes the Contact container -->
   </div>
 
-
-  <footer class="container-fluid text-center">
+  <footer id="footer" class="container-fluid text-center">
     <a href="#myPage" title="To Top">
       <span class="glyphicon glyphicon-chevron-up"></span>
     </a>
